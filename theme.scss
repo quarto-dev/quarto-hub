@@ -175,6 +175,7 @@ h3 { font-size: 1.2rem; }
   @media (min-width: 700px)  { grid-template-columns: repeat(2, 1fr); }
   @media (min-width: 1000px) { grid-template-columns: repeat(3, 1fr); }
   &.two { @media (min-width: 700px) { grid-template-columns: repeat(2, 1fr); } }
+  &.four { @media (min-width: 1000px) { grid-template-columns: repeat(4, 1fr); } }
 }
 
 .hub-card {

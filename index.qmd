@@ -15,7 +15,7 @@ description: |
 # Your Quarto project, live in the browser.
 
 ::: {.lead}
-Quarto Hub renders as you type. You write in the source or directly in the rendered page, and either way it's the same `.qmd`. When you want input, you share a link: comments and edits land in your project, not in a PDF someone emailed back.
+Quarto Hub renders as you type. You write in the source or directly in the rendered page, and either way it's the same `.qmd`. When you want input, you share a link: teammates and agents edit and comment in your project, not in a PDF someone emailed back.
 :::
 
 ::: {.hero-actions}
@@ -42,7 +42,7 @@ Quarto Hub renders as you type. You write in the source or directly in the rende
 
 ## Best for markdown-first projects
 
-::: {.card-grid}
+::: {.card-grid .four}
 ::: {.hub-card}
 ### Websites and docs
 The whole project: file tree, outline, every page rendered as you edit it.
@@ -54,6 +54,10 @@ One `.qmd` the whole team types into during the call. It's rendered before the c
 ::: {.hub-card}
 ### Slides
 revealjs decks, edited and previewed in place. Your co-presenter gets the link, not a PDF.
+:::
+::: {.hub-card}
+### Agents
+Point Claude or any MCP client at the project. It edits the same files you do, and every change stays in the history.
 :::
 :::
 
@@ -68,7 +72,7 @@ Anyone with the link can open the project, read it, and comment. They don't need
 
 ## Next
 
-::: {.card-grid}
+::: {.card-grid .two}
 ::: {.hub-card .soon}
 ### Code execution
 R and Python cells render in Hub, so your reports join your docs and slides.
@@ -76,10 +80,6 @@ R and Python cells render in Hub, so your reports join your docs and slides.
 ::: {.hub-card .soon}
 ### Positron
 Open the Hub project in Positron. Your edits and the browser's merge.
-:::
-::: {.hub-card .soon}
-### Agents
-Point Claude or any MCP client at the project. It edits the same files, and every change stays in the history.
 :::
 :::
 
@@ -94,7 +94,7 @@ Hub is built so that whoever has the project open, a teammate, an agent, or you 
 
 ## The engine underneath
 
-Rendering in the browser as you type takes a faster Quarto. That is Quarto 2: the engine rewritten in Rust.
+Rendering on every keystroke takes a much faster Quarto. That is Quarto 2: the engine rewritten in Rust, and orders of magnitude faster than Quarto 1. A render that used to take seconds takes milliseconds, so Hub can re-render the page as you type, in the browser, with no server in the loop.
 
 ::: {.stack-row}
 <div class="stack-name">Quarto Hub</div>
