@@ -1,0 +1,36 @@
+---
+title: "How it works"
+subtitle: "What is happening underneath a Hub project"
+toc: true
+toc-depth: 2
+---
+
+## Your files stay files
+
+A Hub project is a Quarto project: a folder of `.qmd`, `.yml`, images, and whatever else your site or deck needs. Hub keeps a synchronized copy of that folder for everyone who has the link. There is no proprietary document format and nothing is locked in a database. What you edit in Hub is the same text you would commit to Git.
+
+## Edits merge, they don't conflict
+
+Every keystroke is recorded as a small change to the document rather than as a whole new version of the file. When two people (or a person and an agent) edit the same paragraph, those changes combine automatically instead of producing a merge conflict. This is what makes it safe for many cursors to be in one file.
+
+Under the hood this uses a conflict-free replicated data type, [Automerge](https://automerge.org). You never see it, but it is why Hub does not have "save" or "who has the lock" as concepts.
+
+## Local-first: it works when the network doesn't
+
+Your copy of the project lives in your browser. If you lose connection, you keep editing; when you reconnect, your changes and everyone else's merge. A dropped Wi-Fi during a meeting does not lose your notes.
+
+## Every change is kept
+
+Because edits are recorded individually, Hub has the full history of a project, not just periodic snapshots. The Replay drawer in the editor lets you scrub through that history and see who changed what and when. This is also what will let you audit exactly what an agent did to a document.
+
+## Rendering happens in your browser
+
+The preview pane is Quarto 2 compiled to WebAssembly, running locally in the browser tab. There is no render server and no round trip; the document re-renders as you type. This is why Hub can offer live preview to a reviewer who has never installed Quarto.
+
+## Access
+
+Authors sign in with a Google account to create and own projects. A project can be shared by link; anyone with the link can open it in the editor without an account. Finer-grained roles (read-only, comment-only) are on the roadmap.
+
+## Where it runs
+
+Hub is hosted at [quarto-hub.com](https://quarto-hub.com). The sync server, web client, and Quarto 2 engine are developed in the open in the [quarto-dev/q2](https://github.com/quarto-dev/q2) repository.

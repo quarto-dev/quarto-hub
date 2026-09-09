@@ -1,0 +1,222 @@
+---
+title: "Design system"
+subtitle: "A small set of tokens shared by the Hub editor and this site"
+toc: true
+toc-depth: 2
+---
+
+This is a working reference, not a brand guide. Every value here is taken from one of two sources: the Hub editor itself (`hub-client/src/theme.css` and component CSS in the `q2` repo) or quarto.org (`theme.scss`, `index.css` in `quarto-web`). Where the two disagreed, the editor won, because the goal is for this site to feel like the product.
+
+`theme.scss` in this repo implements everything below as a Quarto/Bootstrap theme.
+
+## Principles
+
+**Feels like the editor.** Light chrome, 1px borders, small tight type in UI elements, one accent color for the one action that matters.
+
+**Quarto underneath.** Layout, callouts, code blocks, and navigation are stock Quarto so anything written here renders the same way it would in a Hub project.
+
+**Borders, not shadows.** Panels and cards are separated by hairlines in `#d0d8e0`. Shadows are reserved for modals.
+
+**One accent.** Indigo `#4f46e5` is used for the primary call to action and nothing else. Everything else is the Posit blue ramp.
+
+## Color
+
+### Posit blue ramp
+
+The editor's text, links, and secondary UI all come from this ramp. Body text is `#17212B`, not black.
+
+::: {.swatches}
+::: {.swatch}
+<div class="sw" style="background:#17212B"></div>
+<div class="sw-meta"><strong>Blue dark 3</strong><code>#17212B</code> body text</div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#213D4F"></div>
+<div class="sw-meta"><strong>Blue dark 2</strong><code>#213D4F</code> dark buttons</div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#305775"></div>
+<div class="sw-meta"><strong>Blue dark 1</strong><code>#305775</code> link hover</div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#447099"></div>
+<div class="sw-meta"><strong>Posit blue</strong><code>#447099</code> links, eyebrows</div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#7494B1"></div>
+<div class="sw-meta"><strong>Blue light 3</strong><code>#7494B1</code></div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#A2B8CB"></div>
+<div class="sw-meta"><strong>Blue light 2</strong><code>#A2B8CB</code> outline borders</div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#D1DBE5"></div>
+<div class="sw-meta"><strong>Blue light 1</strong><code>#D1DBE5</code> cards (editor)</div>
+:::
+:::
+
+quarto.org's link blue is `#39729E`. It is close enough to `#447099` that we use the Posit value everywhere rather than carry both.
+
+### Chrome
+
+The surfaces you see in the editor: header, sidebar, borders, editor background.
+
+::: {.swatches}
+::: {.swatch}
+<div class="sw" style="background:#e8eef4"></div>
+<div class="sw-meta"><strong>Chrome</strong><code>#e8eef4</code> navbar, sidebar</div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#dce4ee"></div>
+<div class="sw-meta"><strong>Chrome section</strong><code>#dce4ee</code> sidebar groups</div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#d0dae8"></div>
+<div class="sw-meta"><strong>Chrome hover</strong><code>#d0dae8</code></div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#d0d8e0"></div>
+<div class="sw-meta"><strong>Border</strong><code>#d0d8e0</code> all hairlines</div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#f0f5f9"></div>
+<div class="sw-meta"><strong>Section alt</strong><code>#f0f5f9</code> hero, alt bands</div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#f5f5f5"></div>
+<div class="sw-meta"><strong>Editor bg</strong><code>#f5f5f5</code> code blocks</div>
+:::
+:::
+
+### Accent and semantic
+
+::: {.swatches}
+::: {.swatch}
+<div class="sw" style="background:#4f46e5"></div>
+<div class="sw-meta"><strong>Hub indigo</strong><code>#4f46e5</code> primary CTA</div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#4338ca"></div>
+<div class="sw-meta"><strong>Indigo hover</strong><code>#4338ca</code></div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#16a34a"></div>
+<div class="sw-meta"><strong>Success</strong><code>#16a34a</code> synced</div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#ca8a04"></div>
+<div class="sw-meta"><strong>Warning</strong><code>#ca8a04</code> coming soon</div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#dc2626"></div>
+<div class="sw-meta"><strong>Error</strong><code>#dc2626</code></div>
+:::
+::: {.swatch}
+<div class="sw" style="background:#2563eb"></div>
+<div class="sw-meta"><strong>Info</strong><code>#2563eb</code></div>
+:::
+:::
+
+Posit orange `#D44000` exists in the editor's token file but is almost never rendered. Leave it out of Hub materials; the page should read as Hub, not as posit.co.
+
+## Typography
+
+Both families are already loaded by the editor from Google Fonts.
+
+::: {.type-sample}
+<span class="eyebrow">Eyebrow · 11px · 700 · 1.5px tracking</span>
+<div style="font-size:2.25rem;font-weight:600;line-height:1.15;letter-spacing:-0.01em">Heading 1 · Open Sans 600</div>
+<div style="font-size:1.6rem;font-weight:600;margin-top:.5rem">Heading 2 · Open Sans 600</div>
+<div style="font-size:1.2rem;font-weight:600;margin-top:.5rem">Heading 3 · Open Sans 600</div>
+<p style="margin-top:.75rem">Body · Open Sans 400 · 16px · line-height 1.6. Same `.qmd` files and YAML you already know, edited together in the browser with a live preview.</p>
+<p class="mono" style="font-size:14px">code · Source Code Pro 400 · 14px · `format: revealjs`</p>
+:::
+
+| Role | Family | Size | Weight | Notes |
+|---|---|---|---|---|
+| Body | Open Sans | 16px | 400 | line-height 1.6 |
+| H1 / H2 / H3 | Open Sans | 36 / 25.6 / 19.2px | 600 | letter-spacing −0.01em |
+| UI text | Open Sans | 13–14px | 500–600 | matches editor buttons and nav |
+| Eyebrow label | Open Sans | 11px | 700 | uppercase, 1.5px tracking, Posit blue |
+| Caption / meta | Open Sans | 12–13px | 400 | `#6a737b` |
+| Code | Source Code Pro | 14px | 400 | on `#f5f5f5` |
+
+: {.token-table}
+
+The eyebrow (`PROJECT`, `DOCUMENT`, `FILES` in the editor) is the most recognizable Hub motif. Use it to label sections instead of adding another heading level.
+
+## Shape and spacing
+
+| Token | Value | Where |
+|---|---|---|
+| Radius, default | 6px | buttons, inputs, chips (36 uses in the editor) |
+| Radius, large | 8px | cards, framed images |
+| Radius, dialog | 12px | modals only |
+| Border | 1px `#d0d8e0` | everywhere |
+| Shadow | `0 20px 60px rgba(0,0,0,.15)` | modals only |
+| Header height | 36–44px | editor header is 36px; site navbar 44px |
+| Transition | 0.15s | background, border, color |
+| Content width | 1100px | matches quarto.org |
+
+: {.token-table}
+
+## Components
+
+### Buttons
+
+<p>
+<a class="btn btn-primary" href="#">Open Hub</a>
+<a class="btn btn-outline-secondary" href="#">How it works</a>
+<a class="btn btn-dark" href="#">Preview</a>
+</p>
+
+Primary is indigo and appears once per view. Outline is the secondary action. Dark (`#213D4F`) mirrors the editor's Preview button and is for in-product references only.
+
+### Status chip
+
+<p><span class="chip">Available today</span> <span class="chip soon">Coming soon</span></p>
+
+Modeled on the editor's "Synced" indicator. Green dot for shipped, amber for roadmap.
+
+### Cards
+
+::: {.card-grid}
+::: {.hub-card}
+<span class="eyebrow">Today</span>
+
+### Card title
+White, 1px border, 8px radius. Eyebrow, title, one or two sentences.
+:::
+::: {.hub-card .soon}
+<span class="eyebrow">Coming soon</span>
+
+### Roadmap card
+Dashed border, transparent background. Same content pattern.
+:::
+:::
+
+### Callouts
+
+Stock Quarto callouts. They inherit the theme's colors without extra CSS.
+
+::: {.callout-note}
+Hub renders with the Quarto 2 engine. Some quarto-cli features are not available yet.
+:::
+
+### Framed screenshot
+
+::: {.frame}
+<div class="frame-bar"><span></span><span></span><span></span></div>
+<div style="height:120px;background:#fff;display:flex;align-items:center;justify-content:center;color:#7494B1;font-size:13px">screenshot goes here</div>
+:::
+
+A minimal browser frame so editor screenshots sit on the page without a hard edge.
+
+## Dark mode
+
+The editor ships a dark theme (`#1a1a2e` editor, `#16213e` chrome, `#646cff` accent). This site is light-only for now; when we add a toggle it should map to those values rather than a generic Bootstrap dark theme.
+
+## Logo
+
+There is no Hub mark yet. Until there is, use the Quarto icon (`images/quarto-icon.svg`) with "Quarto Hub" set in Open Sans 600.
