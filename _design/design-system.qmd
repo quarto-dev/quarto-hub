@@ -3,11 +3,18 @@ title: "Design system"
 subtitle: "A small set of tokens shared by the Hub editor and this site"
 toc: true
 toc-depth: 2
+format:
+  html:
+    theme: ../theme.scss
 ---
+
+::: {.callout-note appearance="simple"}
+Internal reference. Not part of the published site; the `_design/` folder is excluded from the project render. Preview with `quarto render _design/design-system.qmd`.
+:::
 
 This is a working reference, not a brand guide. Every value here is taken from one of two sources: the Hub editor itself (`hub-client/src/theme.css` and component CSS in the `q2` repo) or quarto.org (`theme.scss`, `index.css` in `quarto-web`). Where the two disagreed, the editor won, because the goal is for this site to feel like the product.
 
-`theme.scss` in this repo implements everything below as a Quarto/Bootstrap theme.
+`theme.scss` at the repo root implements everything below as a Quarto/Bootstrap theme.
 
 ## Principles
 

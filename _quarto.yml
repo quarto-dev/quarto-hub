@@ -18,8 +18,6 @@ website:
         text: Overview
       - href: how-it-works.qmd
         text: How it works
-      - href: design-system.qmd
-        text: Design system
     right:
       - text: "Open Hub"
         href: https://quarto-hub.com

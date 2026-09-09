@@ -1,2 +1,4 @@
 /.quarto/
 /_site/
+/_design/*.html
+/_design/*_files/
