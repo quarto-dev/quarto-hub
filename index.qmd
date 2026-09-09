@@ -4,7 +4,7 @@ page-layout: custom
 section-divs: false
 toc: false
 description: |
-  Quarto Hub is a shared, hosted editor for Quarto projects. Open a link, edit together, see the rendered preview as you type.
+  Quarto Hub renders your Quarto project in the browser as you type. Edit the source or the rendered page; share a link and comments land in your project.
 ---
 
 ::: {.hero-banner}
@@ -12,10 +12,10 @@ description: |
 
 <span class="eyebrow">Quarto Hub · Preview</span>
 
-# Quarto, together.
+# Your Quarto project, live in the browser.
 
 ::: {.lead}
-A shared, hosted editor for Quarto projects. Open a link, edit with your team, and watch the rendered preview update as you type. Same `.qmd` files and YAML you already use.
+Quarto Hub renders as you type. You write in the source or directly in the rendered page, and either way it's the same `.qmd`. When you want input, you share a link: comments and edits land in your project, not in a PDF someone emailed back.
 :::
 
 ::: {.hero-actions}
@@ -30,143 +30,83 @@ A shared, hosted editor for Quarto projects. Open a link, edit with your team, a
 
 ::: {.frame}
 <div class="frame-bar"><span></span><span></span><span></span></div>
-![](images/editor.png){fig-alt="The Quarto Hub editor showing a project file tree, a .qmd source pane with meeting notes, and the rendered preview beside it with inline comments."}
+![](images/editor.png){fig-alt="The Quarto Hub editor: project files on the left, .qmd source in the middle, the rendered page on the right with an inline comment."}
 :::
 
 :::
 
 ::: {.alt-background}
-::: {.content-block}
-
-<span class="eyebrow">What it is</span>
-
-## If you already use Quarto, you already know Hub
-
-Hub does not change how Quarto works. It changes who can be in the file with you.
-
-::: {.card-grid}
-::: {.hub-card}
-<span class="eyebrow">Edit together</span>
-
-### One project, many cursors
-Everyone on the link edits the same files at the same time. Changes merge as you type. No branches, no "who has the latest version."
-:::
-::: {.hub-card}
-<span class="eyebrow">Preview as you type</span>
-
-### Rendered output, live
-The preview pane re-renders in the browser while you write, for documents, websites, and revealjs slides.
-:::
-::: {.hub-card}
-<span class="eyebrow">Share a link</span>
-
-### Reviewers need nothing
-Authors sign in with Google to create projects. Reviewers open the share link and read or comment. No account, no install.
-:::
-:::
-
-::: {.callout-note appearance="simple"}
-**People and agents in the same file.** Hub is built so that anything with access to a project, a teammate or an AI agent, edits the same source and shows up in the same history. See [Coming soon](#coming-soon) for where agent support stands.
-:::
-
-:::
-:::
-
 ::: {.content-block}
 
 <span class="eyebrow">Today</span>
 
-## Best today for markdown-first work
-
-Hub is a preview. It is already the fastest way to write these things with other people:
+## Best for markdown-first projects
 
 ::: {.card-grid}
 ::: {.hub-card}
 ### Websites and docs
-Multi-page Quarto websites with a shared file tree, outline, and preview. Good for team docs, handbooks, and project sites.
+The whole project: file tree, outline, every page rendered as you edit it.
 :::
 ::: {.hub-card}
 ### Meeting notes
-A running `.qmd` per team that everyone types into during the call. Rendered notes, no cleanup afterward.
+One `.qmd` the whole team types into during the call. It's rendered before the call ends.
 :::
 ::: {.hub-card}
-### Presentations
-revealjs decks, co-authored and previewed in place. Hand the link to a co-presenter instead of emailing a PDF.
+### Slides
+revealjs decks, edited and previewed in place. Your co-presenter gets the link, not a PDF.
 :::
 :::
 
-::: {.callout-tip appearance="simple"}
-**Why this matters if you use quarto-cli.** Collaboration today means Git and pull requests for authors, and Word or PDF exports for everyone else. Hub replaces that with one link. Nothing to relearn; the collaboration is the new part.
-:::
+Anyone with the link can open the project, read it, and comment. They don't need an account or a Quarto install. You sign in with Google to create and own projects.
 
 :::
+:::
 
-::: {.alt-background}
 ::: {.content-block #coming-soon}
 
 <span class="eyebrow">Coming soon</span>
 
-## What's next
+## Next
 
 ::: {.card-grid}
 ::: {.hub-card .soon}
-<span class="chip soon">In progress</span>
-
 ### Code execution
-R and Python cells rendering in Hub, so reports and analyses join docs and slides.
+R and Python cells render in Hub, so your reports join your docs and slides.
 :::
 ::: {.hub-card .soon}
-<span class="chip soon">In progress</span>
-
-### Positron as a collaborator
-Open the same Hub project in Positron and edit alongside people working in the browser.
+### Positron
+Open the Hub project in Positron. Your edits and the browser's merge.
 :::
 ::: {.hub-card .soon}
-<span class="chip soon">In progress</span>
-
-### Agents as collaborators
-Connect Claude or any MCP client to a Hub project. It edits the same files your team is editing, in real time, with every change kept in the history.
+### Agents
+Point Claude or any MCP client at the project. It edits the same files, and every change stays in the history.
 :::
 :::
 
-:::
+Hub is built so that whoever has the project open, a teammate, an agent, or you in a different editor, is working on the same source with the same history.
+
 :::
 
+::: {.alt-background}
 ::: {.content-block}
 
 <span class="eyebrow">Built on Quarto 2</span>
 
 ## The engine underneath
 
-Hub renders in the browser because of Quarto 2, a rewrite of the Quarto engine in Rust that is fast enough to re-render a document as you type. Hub is the collaborative experience; Q2 is the engine that makes it possible.
+Rendering in the browser as you type takes a faster Quarto. That is Quarto 2: the engine rewritten in Rust.
 
 ::: {.stack-row}
 <div class="stack-name">Quarto Hub</div>
-<p>The shared editor and hosting. Where people and agents work on a project together.</p>
+<p>The editor and hosting. Where you work on a project.</p>
 :::
 ::: {.stack-row}
 <div class="stack-name">Quarto 2</div>
-<p>The next-generation rendering engine. Runs natively and in the browser. Experimental, under active development.</p>
+<p>The engine. Runs natively and in the browser. Experimental.</p>
 :::
 ::: {.stack-row}
 <div class="stack-name">`quarto-cli`</div>
-<p>Quarto 1, the tool you use today. It keeps working exactly as it does; Hub does not replace it.</p>
-:::
-
-:::
-
-::: {.alt-background}
-::: {.content-block}
-
-::: {.card-grid .two}
-::: {.hub-card}
-### Try it
-Open [quarto-hub.com](https://quarto-hub.com), sign in with Google, and create a project. Share the link with one other person and edit the same paragraph.
-:::
-::: {.hub-card}
-### Tell us what breaks
-Hub is a preview. If a project that renders with quarto-cli does not open cleanly in Hub, [file an issue](https://github.com/quarto-dev/quarto-hub/issues) and include the project.
-:::
+<p>Quarto 1. Keeps working as it does today.</p>
 :::
 
 :::

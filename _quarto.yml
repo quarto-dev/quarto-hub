@@ -26,7 +26,7 @@ website:
         aria-label: GitHub
   page-footer:
     left: |
-      Quarto Hub is built by the [Quarto](https://quarto.org) team at [Posit](https://posit.co).
+      Quarto Hub is a preview from the [Quarto](https://quarto.org) team at [Posit](https://posit.co). Something broken? [File an issue](https://github.com/quarto-dev/quarto-hub/issues).
     right:
       - text: quarto.org
         href: https://quarto.org
