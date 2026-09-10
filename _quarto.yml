@@ -10,7 +10,7 @@ website:
   favicon: images/quarto-icon.svg
   open-graph: true
   navbar:
-    logo: images/quarto-icon.svg
+    logo: https://quarto-hub.com/quarto-icon.svg
     logo-alt: "Quarto"
     title: "Quarto Hub"
     left:
