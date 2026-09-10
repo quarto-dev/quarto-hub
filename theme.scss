@@ -156,7 +156,15 @@ h3 { font-size: 1.2rem; }
   @media (min-width: 900px) { padding: 3.5rem 3rem; }
 }
 
+.hero-banner, .alt-background {
+  // Full-bleed even when the preview wraps the page in a container
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
 .hero-banner {
+  .content-block { padding-bottom: 5.5rem; }
   background: radial-gradient(ellipse at 85% 0%, rgba(100,108,255,.28), transparent 55%),
               linear-gradient(160deg, $dark-chrome 0%, $dark-editor 70%);
   border-bottom: 1px solid $dark-border;
@@ -172,8 +180,9 @@ h3 { font-size: 1.2rem; }
 }
 
 // Screenshot overlaps the hero's bottom edge
-.hero-banner + .content-block { padding-top: 0; margin-top: -3rem; position: relative; }
-.frame { box-shadow: 0 20px 60px rgba(23,33,43,.18); }
+.hero-banner + .content-block { padding-top: 0; margin-top: -3.5rem; position: relative; }
+.frame { box-shadow: 0 20px 60px rgba(23,33,43,.18); min-height: 120px; }
+.frame p:empty, .frame .figure:empty { display: none; }
 
 .alt-background {
   background: $section-alt;
