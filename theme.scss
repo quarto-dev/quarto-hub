@@ -277,6 +277,25 @@ h3 { font-size: 1.2rem; }
   img { display: block; width: 100%; margin: 0; }
 }
 
+// Access panel (Today section)
+.access {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .25rem 1.5rem;
+  align-items: start;
+  background: #fff;
+  border: 1px solid $chrome-border;
+  border-left: 3px solid $hub-warning;
+  border-radius: $border-radius-lg;
+  padding: 1.1rem 1.25rem;
+  margin-top: 1.25rem;
+  p { margin: 0; }
+  p + p { margin-top: .5rem; }
+  p:first-child { grid-row: 1 / span 3; padding-top: .35rem; margin: 0; }   // the chip
+  .eyebrow { margin-bottom: .15rem; color: $hub-warning; }
+  @media (max-width: 700px) { grid-template-columns: 1fr; p:first-child { grid-row: auto; padding-top: 0; } }
+}
+
 // Why block
 .why { border-left: 4px solid $hub-indigo; padding-left: 1.5rem; margin-top: 2.5rem;
   h2 { margin-top: .25rem; border-bottom: 0; padding-bottom: 0; }
