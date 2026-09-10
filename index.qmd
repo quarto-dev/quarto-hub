@@ -12,10 +12,10 @@ description: |
 
 <span class="eyebrow">Quarto Hub · Preview</span>
 
-# Quarto that renders while you type.
+# Code and prose belong in one document. So do the people.
 
 ::: {.lead}
-Quarto Hub is a Quarto editor in the browser with no render step. You write in the source or directly in the rendered page, and either way it's the same `.qmd`. When you want input, you share a link: teammates and agents edit and comment in your project, not in a PDF someone emailed back.
+Quarto Hub is a Quarto editor in the browser that renders while you type. You write in the source or directly in the rendered page, and either way it's the same `.qmd`. When you want input, you share a link: teammates and agents edit and comment in your project, not in a PDF someone emailed back.
 
 Today Hub is for markdown: websites, notes, slides. Code cells are next. Nothing about quarto-cli changes.
 :::
@@ -37,7 +37,7 @@ Today Hub is for markdown: websites, notes, slides. Code cells are next. Nothing
 
 <span class="eyebrow" style="margin-top:2.5rem">Why</span>
 
-## Code and prose belong in one document. So do the people.
+## The other half of Google Docs
 
 Quarto's premise is that analysis and writing are one artifact, in plain text you can version. What plain text never had is the other half of Google Docs: several people in the same document at once, comments where the words are, no one waiting for a render or a pull request. Hub adds that half without giving up the source.
 

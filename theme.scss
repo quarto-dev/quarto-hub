@@ -152,7 +152,7 @@ h3 { font-size: 1.2rem; }
 .hero-banner {
   background: $section-alt;
   border-bottom: 1px solid $chrome-border;
-  h1 { font-size: 2.6rem; color: $posit-blue-dark-3; margin: .25rem 0 .75rem; }
+  h1 { font-size: 2.6rem; color: $posit-blue-dark-3; margin: .25rem 0 .75rem; max-width: 46rem; line-height: 1.15; }
   .lead { font-size: 1.2rem; color: $posit-blue-dark-1; max-width: 42rem; }
   .lead p + p { font-size: 1rem; color: $posit-blue; font-weight: 600; }
   .hero-actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
