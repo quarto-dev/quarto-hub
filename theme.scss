@@ -171,6 +171,7 @@ h3 { font-size: 1.2rem; }
   color: #fff;
   .eyebrow { color: $hub-indigo-light; }
   h1 { font-size: 2.7rem; color: #fff; margin: .25rem 0 .9rem; max-width: 56rem; line-height: 1.15; }
+  h1 .line { display: block; }
   .lead { font-size: 1.2rem; color: $posit-blue-light-2; max-width: 42rem; }
   .lead code { background: rgba(255,255,255,.08); color: #fff; }
   .lead p + p { font-size: 1rem; color: $hub-indigo-light; font-weight: 600; }
