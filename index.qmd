@@ -17,7 +17,7 @@ description: |
 ::: {.lead}
 Quarto Hub is a Quarto editor in the browser that renders while you type. You write in the source or directly in the rendered page, and either way it's the same `.qmd`. When you want input, you share a link: teammates and agents edit and comment in your project, not in a PDF someone emailed back.
 
-Today Hub is for markdown: websites, notes, slides. Code cells are next. Nothing about quarto-cli changes.
+Today Hub is best for markdown: websites, notes, slides. Code cells run when someone on the project runs Quarto 2 locally; hosted execution is next. Nothing about quarto-cli changes.
 :::
 
 ::: {.hero-actions}
@@ -82,8 +82,8 @@ Anyone with the link can open the project, read it, and comment. They don't need
 
 ::: {.card-grid .two}
 ::: {.hub-card .soon}
-### Code execution
-R and Python cells render in Hub, so your reports join your docs and slides.
+### Hosted code execution
+R and Python cells run in Hub itself, with nothing installed. Today they run when a project member has Quarto 2 running locally, and what runs is still limited.
 :::
 ::: {.hub-card .soon}
 ### Positron
