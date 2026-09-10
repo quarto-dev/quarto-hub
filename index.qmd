@@ -35,11 +35,13 @@ Today Hub is best for markdown: websites, notes, slides. Code cells run when som
 ![](images/editor.png){fig-alt="The Quarto Hub editor: project files on the left, .qmd source in the middle, the rendered page on the right with an inline comment."}
 :::
 
-<span class="eyebrow" style="margin-top:2.5rem">Why</span>
+::: {.why}
+<span class="eyebrow">Why</span>
 
 ## The other half of Google Docs
 
 Quarto's premise is that analysis and writing are one artifact, in plain text you can version. What plain text never had is the other half of Google Docs: several people in the same document at once, comments where the words are, no one waiting for a render or a pull request. Hub adds that half without giving up the source.
+:::
 
 :::
 
@@ -106,11 +108,11 @@ Rendering on every keystroke takes a much faster Quarto. That is Quarto 2: the e
 
 Quarto 2 is experimental right now, and it is the path forward. quarto-cli stays supported, and over time more of what you do there will work in Quarto 2.
 
-::: {.stack-row}
+::: {.stack-row .hub}
 <div class="stack-name">Quarto Hub</div>
 <p>The editor and hosting. Where you work on a project.</p>
 :::
-::: {.stack-row}
+::: {.stack-row .q2}
 <div class="stack-name">Quarto 2</div>
 <p>The engine. Runs natively and in the browser. Experimental today; where Quarto is going.</p>
 :::

@@ -26,6 +26,13 @@ $section-alt:         #f0f5f9;   // quarto.org hero rgb(240,245,249)
 // Action accent (Hub Share / Preview buttons, active sidebar item)
 $hub-indigo:          #4f46e5;
 $hub-indigo-hover:    #4338ca;
+$hub-indigo-light:    #a5b4fc;   // editor --editor-note (dark)
+$hub-indigo-soft:     #646cff;   // editor dark-theme accent
+
+// Editor dark theme surfaces
+$dark-editor:         #1a1a2e;
+$dark-chrome:         #16213e;
+$dark-border:         #1f3460;
 
 // Semantic
 $hub-success:         #16a34a;
@@ -97,7 +104,7 @@ h3 { font-size: 1.2rem; }
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: $posit-blue;
+  color: $hub-indigo;
   margin-bottom: .5rem;
 }
 
@@ -150,14 +157,23 @@ h3 { font-size: 1.2rem; }
 }
 
 .hero-banner {
-  background: $section-alt;
-  border-bottom: 1px solid $chrome-border;
-  h1 { font-size: 2.6rem; color: $posit-blue-dark-3; margin: .25rem 0 .75rem; max-width: 46rem; line-height: 1.15; }
-  .lead { font-size: 1.2rem; color: $posit-blue-dark-1; max-width: 42rem; }
-  .lead p + p { font-size: 1rem; color: $posit-blue; font-weight: 600; }
+  background: radial-gradient(ellipse at 85% 0%, rgba(100,108,255,.28), transparent 55%),
+              linear-gradient(160deg, $dark-chrome 0%, $dark-editor 70%);
+  border-bottom: 1px solid $dark-border;
+  color: #fff;
+  .eyebrow { color: $hub-indigo-light; }
+  h1 { font-size: 2.7rem; color: #fff; margin: .25rem 0 .9rem; max-width: 46rem; line-height: 1.15; }
+  .lead { font-size: 1.2rem; color: $posit-blue-light-2; max-width: 42rem; }
+  .lead code { background: rgba(255,255,255,.08); color: #fff; }
+  .lead p + p { font-size: 1rem; color: $hub-indigo-light; font-weight: 600; }
   .hero-actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
   .hero-actions p { margin: 0; }
+  .btn-outline-secondary { color: #fff; border-color: rgba(255,255,255,.35); &:hover { background: rgba(255,255,255,.1); border-color: #fff; color: #fff; } }
 }
+
+// Screenshot overlaps the hero's bottom edge
+.hero-banner + .content-block { padding-top: 0; margin-top: -3rem; position: relative; }
+.frame { box-shadow: 0 20px 60px rgba(23,33,43,.18); }
 
 .alt-background {
   background: $section-alt;
@@ -184,10 +200,11 @@ h3 { font-size: 1.2rem; }
   border: 1px solid $chrome-border;
   border-radius: $border-radius-lg;
   padding: 1.25rem 1.25rem 1rem;
+  border-top: 3px solid $hub-indigo;
   h3 { margin: 0 0 .5rem; font-size: 1.05rem; }
   p { margin-bottom: .5rem; font-size: 15px; }
   p:last-child { margin-bottom: 0; }
-  &.soon { border-style: dashed; background: transparent; }
+  &.soon { border-style: dashed; border-top: 3px solid $hub-warning; background: transparent; }
 }
 
 // Status chip, like the editor's "Synced" indicator
@@ -215,7 +232,9 @@ h3 { font-size: 1.2rem; }
   border-top: 1px solid $chrome-border;
   @media (min-width: 700px) { grid-template-columns: 180px 1fr; }
   &:last-child { border-bottom: 1px solid $chrome-border; }
-  .stack-name { font-weight: 600; color: $posit-blue-dark-3; }
+  .stack-name { font-weight: 600; color: $posit-blue-dark-3; padding-left: .75rem; border-left: 3px solid $posit-blue-light-2; }
+  &.hub .stack-name { border-color: $hub-indigo; }
+  &.q2  .stack-name { border-color: $posit-blue; }
   .stack-name code { font-weight: 600; }
   p { margin: 0; }
 }
@@ -235,6 +254,11 @@ h3 { font-size: 1.2rem; }
   }
   img { display: block; width: 100%; margin: 0; }
 }
+
+// Why block
+.why { border-left: 4px solid $hub-indigo; padding-left: 1.5rem; margin-top: 2.5rem;
+  h2 { margin-top: .25rem; border-bottom: 0; padding-bottom: 0; }
+  p { font-size: 1.1rem; color: $posit-blue-dark-1; max-width: 48rem; margin-bottom: 0; } }
 
 // ---------- Design-system page helpers ----------
 
