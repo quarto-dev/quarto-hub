@@ -16,14 +16,14 @@ description: |
 
 ::: {.lead}
 Quarto Hub is a Quarto editor in the browser that renders while you type. You write in the source or directly in the rendered page, and either way it's the same `.qmd`. When you want input, you share a link: teammates and agents edit and comment in your project, not in a PDF someone emailed back.
-
-Today Hub is best for markdown: websites, notes, slides. Code cells run when someone on the project runs Quarto 2 locally; hosted execution is next. Nothing about quarto-cli changes.
 :::
 
 ::: {.hero-actions}
 [Open Hub](https://quarto-hub.com){.btn .btn-primary .btn-lg role="button"}
 [How it works](how-it-works.qmd){.btn .btn-outline-secondary .btn-lg role="button"}
 :::
+
+[Today Hub is best for markdown-to-HTML projects: websites, notes, slides. There is much more to come.]{.scope}
 
 :::
 :::
