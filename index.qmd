@@ -12,7 +12,8 @@ description: |
 
 [Quarto Hub · Preview]{.eyebrow}
 
-# Code and prose belong in one document. So do the people.
+# Code and prose belong in one document.\
+So do the people.
 
 ::: {.lead}
 Quarto Hub is a Quarto editor in the browser that renders while you type. You write in the source or directly in the rendered page, and either way it's the same `.qmd`. When you want input, you share a link: teammates and agents edit and comment in your project, not in a PDF someone emailed back.
