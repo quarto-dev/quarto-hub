@@ -100,7 +100,7 @@ Point your favorite LLM at the project. It edits the same files you do, and ever
 
 [Access]{.eyebrow}
 
-Anyone with the link can open the project, read it, and comment. They don't need an account or a Quarto install. You sign in with Google to create and own projects.
+Anyone with the link can open the project, read it, and comment. They don't need an account or a Quarto install. You sign in to create and own projects.
 
 **Note that quarto-hub.com, the experimental service, is currently available by invite only.**
 
