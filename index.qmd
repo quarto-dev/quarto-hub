@@ -10,7 +10,7 @@ description: |
 ::: {.hero-banner}
 ::: {.content-block}
 
-<span class="eyebrow">Quarto Hub · Preview</span>
+[Quarto Hub · Preview]{.eyebrow}
 
 # Code and prose belong in one document. So do the people.
 
@@ -31,12 +31,14 @@ Today Hub is best for markdown: websites, notes, slides. Code cells run when som
 ::: {.content-block}
 
 ::: {.frame}
+```{=html}
 <div class="frame-bar"><span></span><span></span><span></span></div>
+```
 ![](images/editor.png){fig-alt="The Quarto Hub editor: project files on the left, .qmd source in the middle, the rendered page on the right with an inline comment."}
 :::
 
 ::: {.why}
-<span class="eyebrow">Why</span>
+[Why]{.eyebrow}
 
 ## The other half of Google Docs
 
@@ -48,7 +50,7 @@ Quarto's premise is that analysis and writing are one artifact, in plain text yo
 ::: {.alt-background}
 ::: {.content-block}
 
-<span class="eyebrow">Today</span>
+[Today]{.eyebrow}
 
 ## What works today
 
@@ -76,9 +78,9 @@ Anyone with the link can open the project, read it, and comment. They don't need
 :::
 :::
 
-::: {.content-block #coming-soon}
+::: {#coming-soon .content-block}
 
-<span class="eyebrow">Coming soon</span>
+[Coming soon]{.eyebrow}
 
 ## Next
 
@@ -100,7 +102,7 @@ Hub is built so that whoever has the project open, a teammate, an agent, or you 
 ::: {.alt-background}
 ::: {.content-block}
 
-<span class="eyebrow">Built on Quarto 2</span>
+[Built on Quarto 2]{.eyebrow}
 
 ## The engine underneath
 
@@ -109,16 +111,19 @@ Rendering on every keystroke takes a much faster Quarto. That is Quarto 2: the e
 Quarto 2 is experimental right now, and it is the path forward. quarto-cli stays supported, and over time more of what you do there will work in Quarto 2.
 
 ::: {.stack-row .hub}
-<div class="stack-name">Quarto Hub</div>
-<p>The editor and hosting. Where you work on a project.</p>
+[Quarto Hub]{.stack-name}
+
+The editor and hosting. Where you work on a project.
 :::
 ::: {.stack-row .q2}
-<div class="stack-name">Quarto 2</div>
-<p>The engine. Runs natively and in the browser. Experimental today; where Quarto is going.</p>
+[Quarto 2]{.stack-name}
+
+The engine. Runs natively and in the browser. Experimental today; where Quarto is going.
 :::
 ::: {.stack-row}
-<div class="stack-name">`quarto-cli`</div>
-<p>Quarto 1. Still supported, still what you install.</p>
+[`quarto-cli`]{.stack-name}
+
+Quarto 1. Still supported, still what you install.
 :::
 
 :::

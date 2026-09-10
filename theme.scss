@@ -232,7 +232,7 @@ h3 { font-size: 1.2rem; }
   border-top: 1px solid $chrome-border;
   @media (min-width: 700px) { grid-template-columns: 180px 1fr; }
   &:last-child { border-bottom: 1px solid $chrome-border; }
-  .stack-name { font-weight: 600; color: $posit-blue-dark-3; padding-left: .75rem; border-left: 3px solid $posit-blue-light-2; }
+  .stack-name { display: block; font-weight: 600; color: $posit-blue-dark-3; padding-left: .75rem; border-left: 3px solid $posit-blue-light-2; }
   &.hub .stack-name { border-color: $hub-indigo; }
   &.q2  .stack-name { border-color: $posit-blue; }
   .stack-name code { font-weight: 600; }
