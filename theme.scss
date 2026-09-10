@@ -185,9 +185,9 @@ h3 { font-size: 1.2rem; }
   h1 .line { display: block; }
   .lead { font-size: 1.2rem; color: $posit-blue-light-2; max-width: 42rem; }
   .lead code { background: rgba(255,255,255,.08); color: #fff; }
-  .scope { display: block; margin-top: 1.5rem; font-size: 14px; color: $posit-blue-light-3; max-width: 42rem; }
-  .hero-actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+  .hero-actions { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1.5rem; }
   .hero-actions p { margin: 0; display: flex; gap: .75rem; flex-wrap: wrap; }
+  .scope { display: block; font-size: 14px; color: $posit-blue-light-3; max-width: 42rem; }
   .btn-outline-secondary { color: #fff; border-color: rgba(255,255,255,.35); &:hover { background: rgba(255,255,255,.1); border-color: #fff; color: #fff; } }
 }
 
