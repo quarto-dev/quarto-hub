@@ -18,7 +18,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+
+      # Enables Pages (source: GitHub Actions) if it isn't already.
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Strip Hub-only frontmatter and review comments
         run: python3 scripts/prepare-publish.py .
@@ -30,7 +35,7 @@ jobs:
       - name: Render site
         run: quarto render
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
