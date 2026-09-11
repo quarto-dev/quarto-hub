@@ -1,5 +1,6 @@
 ---
 pagetitle: "Quarto Hub"
+format: q2-preview
 page-layout: custom
 section-divs: false
 toc: false
@@ -9,13 +10,13 @@ toc: false
 
 ::: {.content-block}
 
-[Quarto Hub · Preview]{.eyebrow}
+[Quarto Hub · Preview]{.eyebrow}[>> FYI tried fixing a white gap above this hero banner by adding margin-top: -20px to the .hero-banner scss and it seems to have worked]
 
 # Prose and code belong in one place. [So do the people.]{.line}
 
 ::: {.lead}
 
-Quarto Hub is a Quarto editor in the browser that renders while you type. You edit the Quarto markdown (source) or directly make changes in the rendered page, and either way it's the same `.qmd` underneath. When you want input, you share a link: teammates and agents edit and comment in your project, not in a PDF someone emails back.
+Quarto Hub is a Quarto editor in the browser that renders while you type. You edit the Quarto markdown (source) or directly make changes in the rendered page, and either way it's the same `.qmd` underneath. When you want input, you share a link: teammates and agents edit and comment in your project, not in a doc or PDF someone emails back.
 
 :::
 
@@ -72,7 +73,7 @@ The whole project: file tree, outline, every page rendered as you edit it.
 
 ### Slides
 
-revealjs decks, edited and previewed in place. Your co-presenter gets the link, not a PDF.
+revealjs decks, edited and previewed in place. Your co-presenter gets the link, not a PDF. Edit together and even present from a common version.
 
 :::
 
@@ -80,7 +81,7 @@ revealjs decks, edited and previewed in place. Your co-presenter gets the link, 
 
 ### Meeting notes
 
-One `.qmd` the whole team types into during the call. It's rendered before the call ends.
+One `.qmd` the whole team types into during the call. It's rendered as the discussion is happening and available for reference or comment later.
 
 :::
 
@@ -100,7 +101,7 @@ Point your favorite LLM at the project. It edits the same files you do, and ever
 
 [Access]{.eyebrow}
 
-Anyone with the link can open the project, read it, and comment. They don't need an account or a Quarto install. You sign in to create and own projects.
+Anyone with a project link can open the project, read it, and comment. They don't need an account or a Quarto install. You sign in to create and own projects.
 
 **Note that quarto-hub.com, the experimental service, is currently available by invite only.**
 
@@ -122,7 +123,7 @@ Anyone with the link can open the project, read it, and comment. They don't need
 
 ### Hosted code execution
 
-R and Python cells run in Hub itself, with nothing installed. Today they run when a project member has Quarto 2 running locally, and what runs is still limited.
+R, Python, and Julia cells currently run in the author's local Quarto 2 environment. Later releases will add remote execution, so cells run without anything installed locally.
 
 :::
 
@@ -148,9 +149,9 @@ Hub is built so that whoever has the project open, a teammate, an agent, or you 
 
 ## The engine underneath
 
-Rendering on every keystroke requires a much faster version of Quarto. That is Quarto 2: the engine rewritten in Rust, an order of magnitude faster than Quarto 1, and small enough to run inside the browser tab. You don't need to install anything to use Quarto 2 in Hub; it's already there.
+Rendering on every keystroke requires a much faster version of Quarto. That is Quarto 2: the engine rewritten in Rust, more than an order of magnitude faster than Quarto 1, and small enough to run inside the browser tab. You don't need to install anything to use Quarto 2 in Hub; it's already there.
 
-**Quarto 2 is highly functional but still experimental. It is the future of Quarto but Quarto 1/`quarto-cli` will be supported for many years to come. Over time more of what you use for your daily work will be available in Quarto 2, and we hope the significant improvements in performance, improved errors, and a source-mapped document model that editors, tools, and agents can build on prove worth transitioning to.**
+**Quarto 2 is highly functional but still experimental. It is the future of Quarto but Quarto 1/**`quarto-cli` **will be supported for many years to come. Over time more of what you use for your daily work will be available in Quarto 2, and we hope the significant improvements in performance, improved errors with stricter parsing, and a source-mapped document model that editors, tools, and agents can build on prove worth transitioning to.**
 
 ::: {.stack-row .hub}
 

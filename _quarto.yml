@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Quarto Hub"
-  description: "Quarto, together. A shared editor for Quarto projects."
+  description: "Quarto Hub renders your Quarto project in the browser as you type."
   site-url: https://quarto-dev.github.io/quarto-hub
   repo-url: https://github.com/quarto-dev/quarto-hub
   favicon: images/quarto-icon.svg
@@ -38,7 +38,3 @@ format:
     theme: theme.scss
     toc: false
     link-external-newwindow: true
-    include-in-header:
-      text: |
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

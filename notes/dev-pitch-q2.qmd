@@ -1,0 +1,28 @@
+---
+title: "Draft: Quarto 2 pitch, developer to developer"
+format: q2-preview
+---
+
+Source material, not a page. A team dev's conference pitch for Quarto 2, kept here so we can decide what (if anything) belongs on the landing page or a "for developers" page.
+
+## The pitch, as given
+
+You work developing software in 2026. Two things are hard for you to escape right now: LLMs and Markdown. And because LLMs write a lot of code and a lot of Markdown, you need to write code that deals with Markdown. That's true if you love LLMs and Markdown, and also true if you don't even remotely like either. Quarto 2 aspires to be a world-class code base and system for you to use to handle your hard, Markdown-shaped problems.
+
+Quarto 2 includes a port of Pandoc. It introduces a source-mapping system that extends over existing parsers, and uses it to get consistent, uniformly good error messages across markdown, yaml, json, xml, and other languages. It also comes with:
+
+- a robust system to build dynamic JS renderers from the AST, and
+- that system culminates in Quarto's built-in multiplayer, optionally WYSIWYG, extensible markdown editor.
+- a good CLI for a pretty great SSG (Quarto 2!)
+
+Oh. It's written in Rust. You work developing software in 2026, right?
+
+## What in here is useful for the landing page
+
+[>> "Markdown-shaped problems" is a phrase worth stealing. It names the audience's pain without saying "collaboration."]
+
+[>> The pitch frames Hub as a *consequence* of Q2's architecture (AST → JS renderers → multiplayer editor). That is the honest technical story and matches how we describe "built on Quarto 2." Consider one sentence in the engine section: the editor is not bolted on; it falls out of the renderer.]
+
+[>> "Uniformly good error messages across markdown, yaml, json" is a concrete, checkable claim a quarto-cli user would feel immediately. Candidate for the Q2 section or How it works.]
+
+[>> The LLM framing is aimed at developers, not data scientists. Keep it off the landing page; it could anchor a separate developer-facing page or the q2 repo README.]

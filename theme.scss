@@ -2,7 +2,7 @@
 
 // Quarto Hub site theme
 // Tokens extracted from the Hub editor (q2/hub-client/src/theme.css)
-// and quarto.org (quarto-web/theme.scss, index.css). See design-system.qmd.
+// and quarto.org (quarto-web/theme.scss, index.css).
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Source+Code+Pro:wght@300;400;500&display=swap');
 
@@ -113,14 +113,43 @@ h3 { font-size: 1.2rem; }
 .navbar {
   border-bottom: 1px solid $chrome-border;
   min-height: 44px;
-  .navbar-brand { font-weight: 600; letter-spacing: -0.01em; }
+  background: $chrome-bg;
+  .navbar-brand { font-weight: 600; letter-spacing: -0.01em; color: $posit-blue-dark-3; text-decoration: none; }
   .navbar-brand img, .navbar-logo { height: 24px; width: 24px; max-height: 24px; margin-right: .5rem; }
-  .nav-link { font-size: 14px; font-weight: 500; }
+  .nav-link { font-size: 14px; font-weight: 500; color: $posit-blue-dark-2; text-decoration: none; }
+  .nav-link.active, .nav-link:hover { color: $posit-blue-dark-3; }
+
+  // Layout that works without Bootstrap (q2 preview / Hub preview render the
+  // Bootstrap markup with no Bootstrap CSS). Matches Bootstrap's own result.
+  .navbar-container { display: flex; align-items: center; gap: 1rem; padding: .35rem 1rem; }
+  .navbar-brand-container { display: flex; align-items: center; }
+  .navbar-brand-container .navbar-brand { display: inline-flex; align-items: center; }
+  .navbar-toggler { display: none; }
+  .navbar-collapse { display: flex; flex: 1; align-items: center; }
+  .navbar-nav { display: flex; align-items: center; gap: .25rem; list-style: none; margin: 0; padding: 0; }
+  .navbar-nav.ms-auto { margin-left: auto; }
+  .nav-item { display: block; }
+  .nav-link { display: block; padding: .5rem .6rem; }
+  @media (max-width: 991px) { .navbar-collapse { flex-wrap: wrap; } }
 }
 
 .nav-footer {
   border-top: 1px solid $chrome-border;
   font-size: 13px;
+  background: $chrome-bg;
+  color: $posit-blue-dark-1;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  padding: .75rem 1rem;
+  .nav-footer-center, .nav-footer-right { display: flex; align-items: center; }
+  .footer-items { display: flex; align-items: center; gap: .25rem; list-style: none; margin: 0; padding: 0; }
+  .footer-items .nav-link { display: block; padding: .25rem .5rem; font-size: 13px; color: $posit-blue-dark-1; text-decoration: none; }
+}
+
+// Preview-only fixes. q2 preview / Hub preview render Bootstrap markup without
+// Bootstrap CSS and without the `quarto-light` body class that real builds set.
+body:not(.quarto-light):not(.quarto-dark) {
+  #quarto-header, .footer { width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); }
+  .hero-banner { margin-top: -20px; }   // white gap above the hero in the preview
 }
 
 // ---------- Buttons (self-sufficient; Hub's preview has no Bootstrap) ----------
@@ -175,6 +204,7 @@ h3 { font-size: 1.2rem; }
 }
 
 .hero-banner {
+  margin-top: -20px;
   .content-block { padding-bottom: 3.5rem; }
   background: radial-gradient(ellipse at 85% 0%, rgba(100,108,255,.28), transparent 55%),
               linear-gradient(160deg, $dark-chrome 0%, $dark-editor 70%);
@@ -296,17 +326,3 @@ h3 { font-size: 1.2rem; }
 .why { border-left: 4px solid $hub-indigo; padding-left: 1.5rem; margin-top: 2.5rem;
   h2 { margin-top: .25rem; border-bottom: 0; padding-bottom: 0; }
   p { font-size: 1.1rem; color: $posit-blue-dark-1; max-width: 48rem; margin-bottom: 0; } }
-
-// ---------- Design-system page helpers ----------
-
-.swatches { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); margin: 1rem 0 1.5rem; }
-.swatch {
-  border: 1px solid $chrome-border; border-radius: $border-radius; overflow: hidden; font-size: 12px;
-  .sw { height: 56px; }
-  .sw-meta { padding: .4rem .6rem; background: #fff; }
-  .sw-meta strong { display: block; font-size: 12px; }
-  .sw-meta code { font-size: 11px; background: none; padding: 0; }
-}
-.type-sample { border: 1px solid $chrome-border; border-radius: $border-radius-lg; padding: 1.25rem 1.5rem; background: #fff; }
-.type-sample .mono { font-family: $font-family-monospace; }
-.token-table td code { white-space: nowrap; }
