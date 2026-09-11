@@ -140,9 +140,14 @@ h3 { font-size: 1.2rem; }
   color: $posit-blue-dark-1;
   display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
   padding: .75rem 1rem;
+  .nav-footer-left { flex: 1 1 auto; }
+  .nav-footer-center { flex: 0 0 auto; }
   .nav-footer-center, .nav-footer-right { display: flex; align-items: center; }
+  .nav-footer-left p { margin: 0; }
+  a { color: $posit-blue; text-decoration: none; &:hover { color: $posit-blue-dark-3; text-decoration: underline; } }
   .footer-items { display: flex; align-items: center; gap: .25rem; list-style: none; margin: 0; padding: 0; }
   .footer-items .nav-link { display: block; padding: .25rem .5rem; font-size: 13px; color: $posit-blue-dark-1; text-decoration: none; }
+  .footer-items .nav-link p { margin: 0; }
 }
 
 // Preview-only fixes. q2 preview / Hub preview render Bootstrap markup without
