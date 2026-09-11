@@ -1,3 +1,5 @@
+*This is an informational summary of Quarto Hub. It is not the Quarto Hub source code; that lives in [quarto-dev/q2](https://github.com/quarto-dev/q2).*
+
 # Quarto Hub
 
 **Prose and code belong in one place. So do the people.**
