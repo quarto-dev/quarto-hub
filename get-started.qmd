@@ -103,14 +103,14 @@ Comments are stored in the source as `[>> comment text]`. They travel with the f
 
 ## 5. Share it
 
-Click the **share** icon next to the project name at the top of the file panel. The **Share Project** dialog shows a link under **Invite by link**. Send that link to a colleague.
+Click the **share** icon next to the project name at the top of the file panel. The **Share project** dialog shows a **Shareable link**; click **Copy link** and send it to a colleague.
 
 When they open it, they see the same editor you do. Their cursor shows up in your source pane with their name on it; their edits appear as they type, and yours appear for them. Both of you can comment in the preview if the document uses `q2-preview`.
 
-During the preview, the person you share with must also have an approved account and have signed in once; a link sent to anyone else will not open. And as the dialog says, anyone with the link can edit the project permanently, so treat it as you would a link to a shared folder.
+During the preview, the person you share with must also have an approved account and have signed in once; a link sent to anyone else will not open. And as the dialog says, anyone with the link can edit the project permanently and the link cannot be revoked, so treat it as you would a link to a shared folder.
 
 ::: {.shot .narrow}
-![The Share Project dialog. Crop to the dialog.](images/get-started/04-share.png)
+![The Share project dialog. The warning is worth reading: the link cannot be revoked.](images/get-started/04-share.png)
 :::
 
 ::: {.checkpoint}
