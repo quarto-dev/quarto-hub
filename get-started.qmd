@@ -91,10 +91,10 @@ Use whichever pane suits the task. Prose is usually easier in the preview. The Y
 
 `q2-preview` is for editing in Hub. When you render the project somewhere else, with `quarto render` or `q2 render`, set the format back to `html`, or put the format in `_quarto.yml` and leave it out of the document.
 
-Comments are stored in the source as `[>> comment text]`. They travel with the file and appear in its history like any other edit, so delete them before you publish.
+A comment lives in the source too, as `[>> comment text]` right after the text it refers to, so it travels with the file and appears in the history like any other edit.
 
 ::: {.shot}
-![A q2-preview document. The comment on the right ("nice") was added from the preview pane and lives in the source as `[>> nice]`.](images/get-started/03b-preview-editing.png)
+![The same comment in both panes: as a bubble in the preview, and as `[>> …]` text in the source.](images/get-started/03b-preview-editing.png)
 :::
 
 ::: {.exercise}
