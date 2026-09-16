@@ -109,7 +109,13 @@ The strip at the bottom of the editor tells you what is happening to the project
 ![The bottom bar: Replay on the left, sync status in the middle, comment controls on the right.](images/get-started/04b-status-bar.png)
 :::
 
-**Replay**, on the left, opens the project's history. Drag through it to watch the document change and see who made each edit. Everything anyone has ever typed is in there, including edits made by an agent.
+**Replay**, on the left, opens the project's history.
+
+::: {.shot}
+![Replay open, paused at change 22 of 31. The timeline shows each change; the label above it names who made the one you are looking at.](images/get-started/04c-replay.png)
+:::
+
+Press play, or step through change by change, and the document rewinds and replays in the editor. The label above the timeline shows when each change was made and by whom, so you can see who wrote a paragraph or what an agent did. The teal part of the bar is the history you have played through; the dark part is what comes after. If you want to go back to an earlier state for real, stop there and click **Restore**.
 
 **Synced**, with the green dot, means your changes have reached the server and everyone else's have reached you. If you lose your connection it reads **Offline**; keep working, and it syncs when you are back.
 
