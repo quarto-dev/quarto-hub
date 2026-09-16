@@ -58,7 +58,7 @@ Click **＋ New**. A menu lists the Quarto project types you can start from: **D
 
 The editor has three panes.
 
-**Files, on the left.** The project's file tree. Click a file to open it. The buttons at the top of the panel create a new file, upload one (a screenshot, a CSV), or download the whole project as a zip. Anything you upload can be used from a document in the usual Markdown way, for example `![](images/plot.png)`.
+**Files, on the left.** The project's file tree. Click a file to open it. The buttons at the top of the panel create a new file, upload one (a screenshot, a CSV), or download the whole project as a zip. To use a file in a document, drag it from the file tree into the source pane: an image is inserted as an image, and any other file becomes a link to it. You can also type the Markdown yourself, for example `![](images/plot.png)`.
 
 **Source, in the middle.** The text of the open file. A `.qmd` file is Markdown with an optional YAML header and, if you want them, code cells. Hub does not change the format; this is the same file you would edit anywhere else.
 
