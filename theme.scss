@@ -334,6 +334,7 @@ body:not(.quarto-light):not(.quarto-dark) {
   img { display: block; width: 100%; border: 1px solid $chrome-border; border-radius: $border-radius-lg; box-shadow: 0 12px 40px rgba(23,33,43,.12); }
   figcaption, .figure-caption { font-size: 13px; color: $text-muted; margin-top: .5rem; text-align: left; }
   &.narrow { max-width: 560px; }
+  &.inline { max-width: 300px; margin: 1rem 0 1.25rem; img { box-shadow: none; } }
 }
 
 // Tutorial callouts: checkpoint (what you should see) and exercise (try it)

@@ -119,7 +119,13 @@ During the preview, the person you share with must also have an approved account
 
 ## 6. Organize with collections
 
-Return to **Your Projects** with the project switcher at the top left of the editor. Here you can group projects into **collections**: folders for your own view of the projects page. Click **＋ New collection**, name it ("Team meetings", "Q4 planning"), and it appears as a section. Projects not in any collection sit under **Everything else**.
+Return to your projects page with the **grid icon** at the top left of the editor, beside the project name.
+
+::: {.shot .inline}
+![The grid icon at the top left of the editor takes you back to your projects.](images/get-started/05a-projects-button.png)
+:::
+
+Here you can group projects into **collections**: folders for your own view of the projects page. Click **＋ New collection**, name it ("Team meetings", "Q4 planning"), and it appears as a section. Projects not in any collection sit under **Everything else**.
 
 To move a project into a collection, drag its card onto the collection heading, or open the project's **⋯** menu and choose **Add to collection**. Move it between collections the same way. Collections change only how the page is arranged for you; they do not change the project or who it is shared with.
 
