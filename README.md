@@ -6,7 +6,7 @@
 
 Quarto Hub is a Quarto editor in the browser that renders while you type. You edit the Quarto markdown (source) or make changes directly in the rendered page, and either way it's the same `.qmd` underneath. When you want input, you share a link: teammates and agents edit and comment in your project, not in a doc or PDF someone emails back.
 
-**Site:** https://quarto-dev.github.io/quarto-hub/ · **App:** https://quarto-hub.com (invite only during the preview)
+**Site:** https://quarto-dev.github.io/quarto-hub/ · **App:** https://public-preview.quarto-hub.com (approved accounts only during the preview)
 
 ![The Quarto Hub editor: project files on the left, .qmd source in the middle, the rendered page on the right.](images/editor.png)
 

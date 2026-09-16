@@ -2,3 +2,5 @@
 /_site/
 /_design/*.html
 /_design/*_files/
+
+**/*.quarto_ipynb

@@ -6,12 +6,12 @@ toc-depth: 2
 ---
 
 ::: {.callout-note appearance="simple"}
-Quarto Hub is an experimental preview from the Quarto team and is **invite only** for now. If you have an invite, this page walks you through your first project. If you don't yet, the [overview](index.qmd) explains what Hub is and where it is going.
+Quarto Hub is an experimental preview from the Quarto team. For now, only Google accounts the team has approved can sign in. If yours has been approved, this page walks you through your first project. If not yet, the [overview](index.qmd) explains what Hub is and where it is going.
 :::
 
 ## Before you start
 
-**You will need** a Google account that has received an invite, and a current browser. Nothing to install.
+**You will need** a Google account that the Quarto team has approved for the preview, and a current browser. Nothing to install.
 
 **By the end** you will have created a website project, edited it in both the source and the rendered preview, shared it with someone, and organized it into a collection.
 
@@ -28,12 +28,12 @@ Hub is an editor for [Quarto](https://quarto.org), an open-source system for wri
 
 ## 1. Sign in
 
-Go to [quarto-hub.com](https://quarto-hub.com) and sign in with the Google account your invite was sent to.
+Go to [public-preview.quarto-hub.com](https://public-preview.quarto-hub.com) and sign in with the Google account that was approved for the preview.
 
-Signing in lets you **create and own** projects. People you share a link with can open, read, and comment without owning anything. During the invite-only period, though, they too must have signed in to quarto-hub.com at least once.
+Signing in lets you **create and own** projects. People you share a link with can open, read, and comment without owning anything. During the preview, though, their Google account must also be approved, and they must have signed in at least once.
 
 ::: {.shot .narrow}
-![The Quarto Hub sign-in screen. Crop to the sign-in card.](images/get-started/01-sign-in.png)
+![The Quarto Hub sign-in screen. Read the disclaimer: the preview is for test data, not real work.](images/get-started/01-sign-in.png)
 :::
 
 ::: {.checkpoint}
@@ -107,7 +107,7 @@ Click the **share** icon next to the project name at the top of the file panel. 
 
 When they open it, they see the same editor you do. Their cursor shows up in your source pane with their name on it; their edits appear as they type, and yours appear for them. Both of you can comment in the preview if the document uses `q2-preview`.
 
-During the preview period, the person you share with must also have signed in to quarto-hub.com; a link sent to someone without an invite will not open. And as the dialog says, anyone with the link can edit the project permanently, so treat it as you would a link to a shared folder.
+During the preview, the person you share with must also have an approved account and have signed in once; a link sent to anyone else will not open. And as the dialog says, anyone with the link can edit the project permanently, so treat it as you would a link to a shared folder.
 
 ::: {.shot .narrow}
 ![The Share Project dialog. Crop to the dialog.](images/get-started/04-share.png)
