@@ -224,6 +224,7 @@ body:not(.quarto-light):not(.quarto-dark) {
   .hero-actions p { margin: 0; display: flex; gap: .75rem; flex-wrap: wrap; }
   .scope { display: block; font-size: 14px; color: $posit-blue-light-3; max-width: 42rem; }
   .btn-outline-secondary { color: #fff; border-color: rgba(255,255,255,.35); &:hover { background: rgba(255,255,255,.1); border-color: #fff; color: #fff; } }
+  .btn-link { color: $posit-blue-light-2; border-color: transparent; padding-left: .5rem; padding-right: .5rem; &:hover { color: #fff; text-decoration: underline; } }
 }
 
 // Screenshot overlaps the hero's bottom edge
@@ -326,6 +327,43 @@ body:not(.quarto-light):not(.quarto-dark) {
   .chip { display: inline-flex; }
   .eyebrow { color: $hub-warning; margin-bottom: .25rem; }
 }
+
+// Tutorial screenshots
+.shot {
+  margin: 1.25rem 0 2rem;
+  img { display: block; width: 100%; border: 1px solid $chrome-border; border-radius: $border-radius-lg; box-shadow: 0 12px 40px rgba(23,33,43,.12); }
+  figcaption, .figure-caption { font-size: 13px; color: $text-muted; margin-top: .5rem; text-align: left; }
+  &.narrow { max-width: 560px; }
+}
+
+// Tutorial callouts: checkpoint (what you should see) and exercise (try it)
+.checkpoint, .exercise {
+  border: 1px solid $chrome-border;
+  border-left-width: 4px;
+  border-radius: $border-radius-lg;
+  padding: .8rem 1.1rem;
+  margin: 1.25rem 0 2rem;
+  font-size: 15px;
+  p { margin: 0; }
+}
+.checkpoint { border-left-color: $hub-success; background: #f3faf5; }
+.exercise   { border-left-color: $hub-indigo;  background: #f5f5ff; }
+
+// Supplemental resources box
+.resources {
+  background: $section-alt;
+  border: 1px solid $chrome-border;
+  border-radius: $border-radius-lg;
+  padding: 1.1rem 1.25rem .6rem;
+  margin: 1.25rem 0 2rem;
+  font-size: 15px;
+  .eyebrow { margin-bottom: .4rem; }
+  ul { margin: .5rem 0 .5rem 1.1rem; padding: 0; }
+  li { margin-bottom: .35rem; }
+}
+
+// Tutorial page: numbered step headings get a badge
+.step-heading h2 { display: flex; align-items: baseline; gap: .6rem; }
 
 // Why block
 .why { border-left: 4px solid $hub-indigo; padding-left: 1.5rem; margin-top: 2.5rem;

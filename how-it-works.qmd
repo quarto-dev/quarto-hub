@@ -36,6 +36,6 @@ Authors sign in with a Google account to create and own projects. A project can 
 
 Hub is hosted at [quarto-hub.com](https://quarto-hub.com). The sync server, web client, and Quarto 2 engine are developed in the open in the [quarto-dev/q2](https://github.com/quarto-dev/q2) repository. 
 
-QuartoHub works quite well and we (the Quarto team) have been using it for meeting notes, planning documents and presentations for some time. That said, it is experimental and we are still exploring the best way to deliver this experience. If you do meaningful work you would be dissappointed to lose we suggest you download a .zip of the project regularly.
+QuartoHub works quite well and we (the Quarto team) have been using it for meeting notes, planning documents and presentations for some time. That said, it is experimental and we are still exploring the best way to deliver this experience. If you do meaningful work you would be disappointed to lose we suggest you download a .zip of the project regularly.
 
 Currently access to QuartoHub is by invite only.  We are looking for feedback and appreciate those willing to take the time to take it for a spin and share your experience with us.   

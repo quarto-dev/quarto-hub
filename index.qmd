@@ -23,7 +23,8 @@ Quarto Hub is a Quarto editor in the browser that renders while you type. You ed
 ::: {.hero-actions}
 
 [Open Hub](https://quarto-hub.com){.btn .btn-primary .btn-lg role="button"}
-[How it works](how-it-works.qmd){.btn .btn-outline-secondary .btn-lg role="button"}
+[Get started](get-started.qmd){.btn .btn-outline-secondary .btn-lg role="button"}
+[How it works](how-it-works.qmd){.btn .btn-link .btn-lg role="button"}
 
 :::
 

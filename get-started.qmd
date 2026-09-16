@@ -1,0 +1,147 @@
+---
+title: "Get started with Quarto Hub"
+subtitle: "Sign in, make a website, edit it with someone else. About ten minutes."
+toc: true
+toc-depth: 2
+---
+
+::: {.callout-note appearance="simple"}
+Quarto Hub is an experimental preview from the Quarto team and is **invite only** for now. If you have an invite, this page walks you through your first project. If you don't yet, the [overview](index.qmd) explains what Hub is and where it is going.
+:::
+
+## Before you start
+
+**You will need** a Google account that has received an invite, and a current browser. Nothing to install.
+
+**By the end** you will have created a website project, edited it in both the source and the rendered preview, shared it with someone, and organized it into a collection.
+
+::: {.resources}
+[New to Quarto?]{.eyebrow}
+
+Hub is an editor for [Quarto](https://quarto.org), an open-source system for writing documents, websites, and slides in plain text. You don't need to know it well to follow along. These four pages cover the terms used below.
+
+- [What Quarto is, in five minutes](https://quarto.org/docs/get-started/) — the tour of Quarto itself.
+- [Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html) — headings, lists, links, images. This is what you type in the source pane.
+- [The YAML header](https://quarto.org/docs/get-started/hello/text-editor.html#rendering) — the block between `---` lines at the top of a file, where a document's title and format are set.
+- [Websites](https://quarto.org/docs/websites/) and [presentations](https://quarto.org/docs/presentations/) — the two project types this guide uses.
+:::
+
+## 1. Sign in
+
+Go to [quarto-hub.com](https://quarto-hub.com) and sign in with the Google account your invite was sent to.
+
+Signing in lets you **create and own** projects. People you share a link with can open, read, and comment without owning anything. During the invite-only period, though, they too must have signed in to quarto-hub.com at least once.
+
+::: {.shot .narrow}
+![The Quarto Hub sign-in screen. Crop to the sign-in card.](images/get-started/01-sign-in.png)
+:::
+
+::: {.checkpoint}
+**You should now see** a page titled **Your Projects**, empty except for a **＋ New project** button in the upper right.
+:::
+
+## 2. Create a project
+
+A **project** in Hub is a Quarto project: a folder with a `_quarto.yml` configuration file, one or more `.qmd` documents, and any images the documents use. Everything you make in Hub is a project, even a single document.
+
+Click **＋ New project**. A menu lists the Quarto project types you can start from: **Default** (one document), **Website**, **Blog**, **Manuscript**, and **Book**. Choose **Website**, type a name, and click **Create**. Hub creates the starter files and opens the project.
+
+::: {.shot}
+![The projects page with the New project menu open. Capture the full window so the button's position is clear.](images/get-started/02-new-project.png)
+:::
+
+::: {.checkpoint}
+**You should now see** the editor, with `index.qmd` open and a rendered page on the right that begins with your project's name.
+:::
+
+## 3. The editor
+
+The editor has three panes.
+
+**Files, on the left.** The project's file tree. Click a file to open it. The buttons at the top of the panel create a new file, upload one (a screenshot, a CSV), or download the whole project as a zip. Anything you upload can be used from a document in the usual Markdown way, for example `![](images/plot.png)`.
+
+**Source, in the middle.** The text of the open file. A `.qmd` file is Markdown with an optional YAML header and, if you want them, code cells. Hub does not change the format; this is the same file you would edit anywhere else.
+
+**Preview, on the right.** The rendered result, updated as you type.
+
+The three small buttons above the panes switch between source only, split, and preview only.
+
+::: {.shot}
+![The editor with a website project open: files on the left, source in the middle, preview on the right. Full window.](images/get-started/03-editor.png)
+:::
+
+::: {.exercise}
+**Try it.** In the source pane, change the heading on `index.qmd` and add a sentence below it. Watch the preview update as you type. There is no save button; every change is kept as you make it.
+:::
+
+## 4. Edit in the preview with `format: q2-preview`
+
+By default a document uses Quarto's normal HTML format, and the preview is read-only. Hub adds a format of its own, **`q2-preview`**, that makes the preview editable too. Set it in the YAML header at the top of the document:
+
+```yaml
+---
+title: "Team meeting"
+format: q2-preview
+---
+```
+
+With `q2-preview` set, you can click into the rendered text on the right and type; the source on the left changes to match. You can also select text in the preview and **add a comment**. This is how reviewers who never open the source leave feedback.
+
+Use whichever pane suits the task. Prose is usually easier in the preview. The YAML header, code cells, and layout are easier in the source.
+
+`q2-preview` is for editing in Hub. When you render the project somewhere else, with `quarto render` or `q2 render`, set the format back to `html`, or put the format in `_quarto.yml` and leave it out of the document.
+
+Comments are stored in the source as `[>> comment text]`. They travel with the file and appear in its history like any other edit, so delete them before you publish.
+
+::: {.shot}
+![A q2-preview document being edited in the preview pane, with a comment attached to a sentence. Full window.](images/get-started/03b-preview-editing.png)
+:::
+
+::: {.exercise}
+**Try it.** Add `format: q2-preview` to `index.qmd`. Click a word in the preview and retype it. Then select a sentence in the preview and add a comment; find it in the source.
+:::
+
+## 5. Share it
+
+Click the **share** icon next to the project name at the top of the file panel. The **Share Project** dialog shows a link under **Invite by link**. Send that link to a colleague.
+
+When they open it, they see the same editor you do. Their cursor shows up in your source pane with their name on it; their edits appear as they type, and yours appear for them. Both of you can comment in the preview if the document uses `q2-preview`.
+
+During the preview period, the person you share with must also have signed in to quarto-hub.com; a link sent to someone without an invite will not open. And as the dialog says, anyone with the link can edit the project permanently, so treat it as you would a link to a shared folder.
+
+::: {.shot .narrow}
+![The Share Project dialog. Crop to the dialog.](images/get-started/04-share.png)
+:::
+
+::: {.checkpoint}
+**You should now see** a second cursor in the source pane when your colleague starts typing.
+:::
+
+## 6. Organize with collections
+
+Return to **Your Projects** with the project switcher at the top left of the editor. Here you can group projects into **collections**: folders for your own view of the projects page. Click **＋ New collection**, name it ("Team meetings", "Q4 planning"), and it appears as a section. Projects not in any collection sit under **Everything else**.
+
+To move a project into a collection, drag its card onto the collection heading, or open the project's **⋯** menu and choose **Add to collection**. Move it between collections the same way. Collections change only how the page is arranged for you; they do not change the project or who it is shared with.
+
+::: {.shot}
+![Two collections on the projects page, with a project card being dragged from one to the other. Full window.](images/get-started/05-collections.png)
+:::
+
+## 7. Fork a project to reuse it
+
+Every project card has a **duplicate** button, marked with a fork icon. It makes a copy of the project under a new name, with no history carried over. Keep one project as a template (a meeting-notes layout, a slide deck) and fork it each time, instead of starting from the starter files.
+
+::: {.shot .narrow}
+![The fork button on a project card and the Duplicate dialog. Crop to the card and dialog.](images/get-started/06-fork.png)
+:::
+
+## Recap
+
+You signed in, created a website project, edited it in the source and in the preview, shared it, organized it into a collection, and forked it. Those seven actions are most of what Hub does today.
+
+**Where to go next**
+
+- For slides, create a Default project and set `format: revealjs` in the YAML header; the preview shows the deck. Quarto's [presentations guide](https://quarto.org/docs/presentations/) covers the rest.
+- [How it works](how-it-works.qmd) explains what is underneath: local-first sync, full history, and rendering in the browser.
+- Hub is experimental. If you make something you would mind losing, download a zip from the file panel now and then.
+- If something breaks, or a step here didn't match what you saw, [file an issue](https://github.com/quarto-dev/quarto-hub/issues). That is what the preview is for.

@@ -20,6 +20,8 @@ website:
     left:
       - href: index.qmd
         text: Overview
+      - href: get-started.qmd
+        text: Get started
       - href: how-it-works.qmd
         text: How it works
     right:
