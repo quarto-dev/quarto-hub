@@ -101,7 +101,21 @@ A comment lives in the source too, as `[>> comment text]` right after the text i
 **Try it.** Add `format: q2-preview` to `index.qmd`. Click a word in the preview and retype it. Then select a sentence in the preview and add a comment; find it in the source.
 :::
 
-## 5. Share it
+## 5. The bar along the bottom
+
+The strip at the bottom of the editor tells you what is happening to the project.
+
+::: {.shot}
+![The bottom bar: Replay on the left, sync status in the middle, comment controls on the right.](images/get-started/04b-status-bar.png)
+:::
+
+**Replay**, on the left, opens the project's history. Drag through it to watch the document change and see who made each edit. Everything anyone has ever typed is in there, including edits made by an agent.
+
+**Synced**, with the green dot, means your changes have reached the server and everyone else's have reached you. If you lose your connection it reads **Offline**; keep working, and it syncs when you are back.
+
+**Edit** and **Authors** switch the preview between plain editing and a view that shows who wrote what. The **Comments** controls on the far right show or hide comments and count the open ones.
+
+## 6. Share it
 
 Click the **share** icon next to the project name at the top of the file panel.
 
@@ -123,7 +137,7 @@ During the preview, the person you share with must also have an approved account
 **You should now see** a second cursor in the source pane when your colleague starts typing.
 :::
 
-## 6. Organize with collections
+## 7. Organize with collections
 
 Return to your projects page with the **grid icon** at the top left of the editor, beside the project name.
 
@@ -149,7 +163,7 @@ To move a project into the collection, drag its row onto the collection heading,
 ![Two projects moved into the Meeting Notes collection. Everything else is now empty.](images/get-started/05-collections.png)
 :::
 
-## 7. Fork a project to reuse it
+## 8. Fork a project to reuse it
 
 Every project card has a **fork** button, the branching icon between the magnifier and the **⋯** menu. It makes a copy of the project under a new name, with no history carried over. Keep one project as a template (a meeting-notes layout, a slide deck) and fork it each time, instead of starting from the starter files.
 
@@ -159,7 +173,7 @@ Every project card has a **fork** button, the branching icon between the magnifi
 
 ## Recap
 
-You signed in, created a website project, edited it in the source and in the preview, shared it, organized it into a collection, and forked it. Those seven actions are most of what Hub does today.
+You signed in, created a website project, edited it in the source and in the preview, read the status bar, shared it, organized it into a collection, and forked it. That is most of what Hub does today.
 
 **Where to go next**
 
