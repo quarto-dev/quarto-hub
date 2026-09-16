@@ -37,17 +37,17 @@ Signing in lets you **create and own** projects. People you share a link with ca
 :::
 
 ::: {.checkpoint}
-**You should now see** a page titled **Your Projects**, empty except for a **＋ New project** button in the upper right.
+**You should now see** your projects page. The first time it says **No projects yet**, with a **＋ New project** button in the middle and a **＋ New** button in the upper right. Either one works.
 :::
 
 ## 2. Create a project
 
 A **project** in Hub is a Quarto project: a folder with a `_quarto.yml` configuration file, one or more `.qmd` documents, and any images the documents use. Everything you make in Hub is a project, even a single document.
 
-Click **＋ New project**. A menu lists the Quarto project types you can start from: **Default** (one document), **Website**, **Blog**, **Manuscript**, and **Book**. Choose **Website**, type a name, and click **Create**. Hub creates the starter files and opens the project.
+Click **＋ New**. A menu lists the Quarto project types you can start from: **Default** (one document), **Website**, **Blog**, **Manuscript**, and **Book**. Choose **Website**, type a name, and click **Create**. Hub creates the starter files and opens the project.
 
 ::: {.shot}
-![The projects page with the New project menu open. Capture the full window so the button's position is clear.](images/get-started/02-new-project.png)
+![The projects page before you have made anything. New project is in the middle; ＋ New is in the upper right.](images/get-started/02-new-project.png)
 :::
 
 ::: {.checkpoint}
@@ -67,7 +67,7 @@ The editor has three panes.
 The three small buttons above the panes switch between source only, split, and preview only.
 
 ::: {.shot}
-![The editor with a website project open: files on the left, source in the middle, preview on the right. Full window.](images/get-started/03-editor.png)
+![The editor: files on the left, source in the middle, preview on the right.](images/get-started/03-editor.png)
 :::
 
 ::: {.exercise}
@@ -94,7 +94,7 @@ Use whichever pane suits the task. Prose is usually easier in the preview. The Y
 Comments are stored in the source as `[>> comment text]`. They travel with the file and appear in its history like any other edit, so delete them before you publish.
 
 ::: {.shot}
-![A q2-preview document being edited in the preview pane, with a comment attached to a sentence. Full window.](images/get-started/03b-preview-editing.png)
+![A q2-preview document. The comment on the right ("nice") was added from the preview pane and lives in the source as `[>> nice]`.](images/get-started/03b-preview-editing.png)
 :::
 
 ::: {.exercise}
