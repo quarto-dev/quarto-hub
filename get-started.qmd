@@ -151,19 +151,25 @@ Return to your projects page with the **grid icon** at the top left of the edito
 ![The grid icon at the top left of the editor takes you back to your projects.](images/get-started/05a-projects-button.png)
 :::
 
-Here you can group projects into **collections**: folders for your own view of the projects page. Click **＋ New collection** and give it a name.
+Here you can group projects into **collections**: folders for your own view of the projects page. Projects that are not in any collection sit under **Everything else**. Click **＋ New collection**.
+
+::: {.shot}
+![The projects page before any collection exists. New collection is the button above Everything else.](images/get-started/05-new-collection-button.png)
+:::
+
+Give the collection a name and click **Create**.
 
 ::: {.shot .narrow}
 ![Naming a new collection.](images/get-started/05b-new-collection.png)
 :::
 
-The new collection appears as a section at the top of the page, empty. Projects that are not in any collection sit under **Everything else**.
+The new collection appears as a section at the top of the page, empty. To move a project into it, drag the project's row onto the collection, or open the row's **⋯** menu and choose **Add to collection**.
 
 ::: {.shot}
-![An empty collection above the Everything else list. The project row on the right has three buttons: peek, fork, and the ⋯ menu.](images/get-started/05c-empty-collection.png)
+![The empty collection, with the hint and the project's ⋯ menu marked.](images/get-started/05c-empty-collection.png)
 :::
 
-To move a project into the collection, drag its row onto the collection heading, or open the project's **⋯** menu and choose **Add to collection**. Move it between collections the same way. Collections change only how the page is arranged for you; they do not change the project or who it is shared with.
+Move projects between collections the same way. Collections change only how the page is arranged for you; they do not change the project or who it is shared with.
 
 ::: {.shot}
 ![Two projects moved into the Meeting Notes collection. Everything else is now empty.](images/get-started/05-collections.png)
